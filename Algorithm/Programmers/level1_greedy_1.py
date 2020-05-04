@@ -1,3 +1,5 @@
+# 탐욕법(Greedy) 체육복
+
 def solution(n, lost, reserve):
     answer = 0
     cnt = 0
