@@ -6,21 +6,12 @@ def solution(scv, K):
     
     while scv[0] < K :
         if len(scv) == 1 :
-            flag = True
-            if scv[0] >= K :
-                return answer
-            else :
-                return -1
+            return -1
         else :
-            cal = scv[0] + (scv[1] * 2)
-            scv = scv[2:]
-            scv.append(cal)
+            s1 = heapq.heappop(scv)
+            s2 = heapq.heappop(scv)
+            cal = s1 + (s2 * 2)
+            heapq.heappush(scv,cal)
             answer += 1
-            break
-            
-        if len([x for x in scv if x >= 7]) == len(scv) :
-            flag = True
-            return answer
-    
     
     return answer
