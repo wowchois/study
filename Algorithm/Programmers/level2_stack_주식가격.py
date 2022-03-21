@@ -32,5 +32,7 @@ def solution(prices):
 1. len() 에 접근하는 부분을 변수로 선언해서 접근수를 줄임.
 2. cnt변수로 계산하지않고 answer에 직접 접근.
 3. 두개의 for문 모두 range()로 index로 처리.
+
+> 이전에는 for문에 enumerate로 val,index 접근했는데, 효율성 문제로 제거
 '''
 
