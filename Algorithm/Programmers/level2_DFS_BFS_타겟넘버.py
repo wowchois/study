@@ -1,3 +1,10 @@
+'''
+모든 경우의 count로 재귀함수 사용.
+
+[1, 1, 1, 1, 1]	3	5
+[4, 1, 2, 1]	4	2
+'''
+
 def solution(numbers, target):
     answer = 0
     answer += loop(numbers[0],1,numbers,target,'')
