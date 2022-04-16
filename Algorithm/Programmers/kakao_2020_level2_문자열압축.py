@@ -1,4 +1,6 @@
 '''
+https://programmers.co.kr/learn/courses/30/lessons/60057
+
 TEST CASE
 
 s / result
