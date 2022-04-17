@@ -10,7 +10,7 @@
 2. Nginx : 오픈소스 소프트웨어이며, 더 적은 자원으로 데이터를 빠르게 서비스하는 부분이 목적이다.
 
 
-## was (web application server)
+## WAS (Web Application Server)
 : 미들웨어로 클라이언트와 서버 간의 비즈니스 로직 처리를 담당한다.  
 
 기능 :  
