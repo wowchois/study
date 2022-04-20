@@ -35,3 +35,15 @@ def solution(participant, completion):
     answer = dic[temp]
 
     return answer
+
+#case 4. pop이용
+def solution(participant, completion):
+    answer = ''
+    length = len(completion)
+    
+    for x in range(length) :
+        t = completion.pop()
+        participant.remove(t)
+    
+    answer = participant[0]
+    return answer
