@@ -15,5 +15,10 @@
 
 ### python 풀이 시 고려할 사항
 - 문자열을 [n:m]로 자르는 경우, 문자열 길이 이상 잘라도 출력은 ''이다.  
+- dictionary 사용   
+  dict.get('key',값이없을때 리턴값) : key값으로 찾는데, 값이 없는 경우 뒤의값으로 return한다.   
+  dict.pop('key',값이없을때 리턴값) : .get과 비슷한데, pop을 하면서 리턴한다.   
+  'key' in dict : True/False 리턴으로 key 여부 확인   
+  .keys() / .values()   
 
 
