@@ -1,3 +1,38 @@
+### deque
+- deque 
+: 양방향 queue (앞/뒤 방향에서 요소 출력가능) O(1)    
+: stack / queue 처럼 사용할 수 있다.    
+(push/pop이 list보다 우수한 속도이다)
+
+```
+from collections import deque
+
+t_que = deque(Arr/string)
+t_que.append(item) #add right
+t_que.appendleft(item) # add left
+t_que.pop(item) # pop right
+t_que.popleft(item) # pop left
+
+t_que.extend(arr) # arr right 붙이기
+t_que.extendleft(arr) # arr left 붙이기
+
+t_que.remove(item) # 찾아서 삭제
+t_que.rotate(n) # n만큼 회전 (+ 오른쪽, - 왼쪽)
+```
+
+### heapq
+- heapq
+: 2진트리 기반 최소heap 자료구조   
+최대값/최솟값을 빠르게 찾는다.   
+최대힙 : 부모-자식 노드에서 부모가 제일 큰 값 부터 내려감     
+최소힙 : 부모-자식 노드에서 부모가 제일 작은 값 부터 내려감    
+
+```
+
+
+```
+
+
 
 ### DFS / BFS
 - DFS(Depth First Search)  
