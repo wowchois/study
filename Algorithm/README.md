@@ -20,5 +20,5 @@
   dict.pop('key',값이없을때 리턴값) : .get과 비슷한데, pop을 하면서 리턴한다.   
   'key' in dict : True/False 리턴으로 key 여부 확인   
   .keys() / .values()   
-
+- list(문자열) : 한글자씩 리스트로 리턴된다.
 
