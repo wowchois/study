@@ -6,6 +6,26 @@ skill	skill_trees	return
 '''
 
 
+# SUCCESS CODE
+# skill에 포함안되면 continue
+# skill에 포함되는데 조건에 해당되어도 continue
+# skill에 포함되는데 조건에 해당안되면 break
+
+from collections import deque
+
+def solution(skill, skill_trees):
+    answer = 0
+
+    for txt in skill_trees :
+        s_que = deque(skill)
+        for a in txt :
+            if a in skill and a != s_que.popleft() : break
+        else : answer += 1
+            
+    return answer
+
+
+
 # FAIL CODE
 def solution(skill, skill_trees):
     answer = 0
@@ -27,3 +47,4 @@ def solution(skill, skill_trees):
                 answer += 1
            
     return answer
+
