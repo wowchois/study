@@ -1,5 +1,5 @@
 ### deque
-- deque 
+- deque   
 : 양방향 queue (앞/뒤 방향에서 요소 출력가능) O(1)    
 : stack / queue 처럼 사용할 수 있다.    
 (push/pop이 list보다 우수한 속도이다)
@@ -20,8 +20,24 @@ t_que.remove(item) # 찾아서 삭제
 t_que.rotate(n) # n만큼 회전 (+ 오른쪽, - 왼쪽)
 ```
 
+### PriorityQueue
+- PriorityQueue    
+: 우선순위 queue로 선입선출 구조이다. (First In First Out)   
+데이터를 추가한 대로 삭제된다.  
+queue의 default size는 무한대이므로, maxsize를 정해줘야 한다.  
+
+```
+que = PriorityQueue(maxsize=8)
+que.put(1) # add
+que.put(2)
+
+que.get() # remove
+```
+
+
+
 ### heapq
-- heapq
+- heapq   
 : 2진트리 기반 최소heap 자료구조, O(log2N)   
 데이터가 채워질때는 왼쪽 아래부터, 오른쪽으로 채워진다. (depth 달리지면 왼쪽 가장 아래부터)  
 최대값/최솟값을 빠르게 찾는다. (ex : 10,20,30 -> [10,30,20])
