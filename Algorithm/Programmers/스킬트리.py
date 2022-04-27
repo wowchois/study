@@ -10,6 +10,7 @@ skill	skill_trees	return
 # skill에 포함안되면 continue
 # skill에 포함되는데 조건에 해당되어도 continue
 # skill에 포함되는데 조건에 해당안되면 break
+# deque 의 popleft 는 O(1) 시간복잡도
 
 from collections import deque
 
