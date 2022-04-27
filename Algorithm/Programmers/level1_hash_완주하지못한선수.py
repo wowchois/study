@@ -36,14 +36,13 @@ def solution(participant, completion):
 
     return answer
 
-#case 4. pop이용
+#case 4. sort이용
 def solution(participant, completion):
     answer = ''
-    length = len(completion)
+    participant.sort()
+    completion.sort()
     
-    for x in range(length) :
-        t = completion.pop()
-        participant.remove(t)
-    
-    answer = participant[0]
-    return answer
+    for p,c in zip(participant,completion) :
+        if p!=c : return p #발견하면 리턴
+        
+    return participant[-1] #마지막 남은 사람 리턴
