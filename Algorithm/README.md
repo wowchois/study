@@ -93,4 +93,6 @@ heapq.heapify(n_arr) # list를 heapq로 변환
   'key' in dict : True/False 리턴으로 key 여부 확인   
   .keys() / .values()   
 - list(문자열) : 한글자씩 리스트로 리턴된다.
+- list 길이가 같은 배열 2개 경우 zip() 으로 묶어서 사용
+- for else 문 사용하기
 
