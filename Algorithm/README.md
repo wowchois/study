@@ -1,3 +1,16 @@
+
+## python 풀이 시 고려할 사항
+- 문자열을 [n:m]로 자르는 경우, 문자열 길이 이상 잘라도 출력은 ''이다.  
+- dictionary 사용   
+  dict.get('key',값이없을때 리턴값) : key값으로 찾는데, 값이 없는 경우 뒤의값으로 return한다.   
+  dict.pop('key',값이없을때 리턴값) : .get과 비슷한데, pop을 하면서 리턴한다.   
+  'key' in dict : True/False 리턴으로 key 여부 확인   
+  .keys() / .values()   
+- list(문자열) : 한글자씩 리스트로 리턴된다.
+- list 길이가 같은 배열 2개 경우 zip() 으로 묶어서 사용
+- for else 문 사용하기
+- math.ceil() 올림 사용하기
+
 ### deque
 - deque   
 : 양방향 queue (앞/뒤 방향에서 요소 출력가능) O(1)    
@@ -84,15 +97,4 @@ heapq.heapify(n_arr) # list를 heapq로 변환
 - BFS : queue
 
 
-
-### python 풀이 시 고려할 사항
-- 문자열을 [n:m]로 자르는 경우, 문자열 길이 이상 잘라도 출력은 ''이다.  
-- dictionary 사용   
-  dict.get('key',값이없을때 리턴값) : key값으로 찾는데, 값이 없는 경우 뒤의값으로 return한다.   
-  dict.pop('key',값이없을때 리턴값) : .get과 비슷한데, pop을 하면서 리턴한다.   
-  'key' in dict : True/False 리턴으로 key 여부 확인   
-  .keys() / .values()   
-- list(문자열) : 한글자씩 리스트로 리턴된다.
-- list 길이가 같은 배열 2개 경우 zip() 으로 묶어서 사용
-- for else 문 사용하기
 
