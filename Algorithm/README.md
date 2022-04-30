@@ -10,6 +10,7 @@
 - list 길이가 같은 배열 2개 경우 zip() 으로 묶어서 사용
 - for else 문 사용하기
 - math.ceil() 올림 사용하기
+- 정렬 .sort()는 O(nlogn) 이다. (필요할때는 사용하는게 좋다)
 
 ### deque
 - deque   
