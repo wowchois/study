@@ -62,8 +62,13 @@ que.get() # remove
 import heapq
 
 arr = []
+heapq.heapify(arr)
 heapq.heappush(arr,10) # 10을 arr에 추가  
 heapq.heappop(arr) # arr의 가장 작은 원소 리턴하고 삭제 / 없을 경우 index error (삭제 안할경우 index접근)
+
+#heapify 한 후 arr은 heap이 되어서 작은 숫자부터 자동정렬된다.
+arr[0] # => 제일 작은값 출력됨.
+
 
 n_arr = [10,30,20]
 heapq.heapify(n_arr) # list를 heapq로 변환
