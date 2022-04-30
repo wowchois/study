@@ -11,7 +11,6 @@ s / result
 "xababcdcdababcdcd"	17
 '''
 
-
 # 첫번째 풀었을때
 def solution(s):
     answer = 0
@@ -72,5 +71,25 @@ def solution(s):
 
 
 
+# 코드 리팩토링 한 경우
+def solution(s):
+    answer = 0
+    result = len(s)
+    length = len(s)
+    
+    if length == 1: return result
+
+    for n in range(1, (length//2)+1):
+        cnt = 1
+        txt = ''
+        for t in range(0,length,n):
+            if s[t:t+n] == s[t+n:t+n+n]:
+                cnt += 1
+            else :
+                txt += str(cnt)+s[t:t+n] if cnt > 1 else s[t:t+n]
+                cnt = 1
+        result = min(result,len(txt))
+
+    return result
 
 
