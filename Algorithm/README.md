@@ -24,8 +24,8 @@ from collections import deque
 t_que = deque(Arr/string)
 t_que.append(item) #add right
 t_que.appendleft(item) # add left
-t_que.pop(item) # pop right
-t_que.popleft(item) # pop left
+t_que.pop() # pop right
+t_que.popleft() # pop left
 
 t_que.extend(arr) # arr right 붙이기
 t_que.extendleft(arr) # arr left 붙이기
