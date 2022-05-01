@@ -11,9 +11,9 @@ N	works	result
 def solution(no, works):
     result = 0
     idx = 0
-    if no > sum(works): return 0
+    if no > sum(works): return result
 
-    for n in range(no):
+    for _ in range(no):
         works.sort(reverse=True)
         min_n = works[-1]
         
@@ -27,3 +27,17 @@ def solution(no, works):
 
     return result
 
+
+# 코드 개선
+def solution(no, works):
+    result = 0
+    idx = 0
+    if no > sum(works): return result
+
+    for _ in range(no):
+        works.sort()
+        works[-1] -= 1
+    
+    result = sum([x**2 for x in works])
+
+    return result
