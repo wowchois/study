@@ -68,6 +68,7 @@ heapq.heappop(arr) # arr의 가장 작은 원소 리턴하고 삭제 / 없을 �
 
 #heapify 한 후 arr은 heap이 되어서 작은 숫자부터 자동정렬된다.
 arr[0] # => 제일 작은값 출력됨.
+arr[0] = 1 => 값 치환만 되고 heap자체에서 정렬은 안해준다!! (pop,push 해야 정렬함!)
 
 
 n_arr = [10,30,20]
