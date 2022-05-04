@@ -13,6 +13,7 @@
 - 정렬 .sort()는 O(nlogn) 이다. (필요할때는 사용하는게 좋다)
 - 우선순위가 높은 것부터 처리해야 하는 경우 heap문제가 많음.
 - list 의 pop(0) 보다 deque 의 popleft()가 더 빠르다. (pop(0) 시간복잡도 O(n))
+- O(logn)과 O(nlogn) 과 엄청난 속도차이가 있다. (n배가 됨)
 
 ### deque
 - deque   
