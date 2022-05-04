@@ -11,6 +11,8 @@
 - for else 문 사용하기
 - math.ceil() 올림 사용하기
 - 정렬 .sort()는 O(nlogn) 이다. (필요할때는 사용하는게 좋다)
+- 우선순위가 높은 것부터 처리해야 하는 경우 heap문제가 많음.
+- list 의 pop(0) 보다 deque 의 popleft()가 더 빠르다. (pop(0) 시간복잡도 O(n))
 
 ### deque
 - deque   
@@ -58,6 +60,8 @@ que.get() # remove
 최대힙 : 부모-자식 노드에서 부모가 제일 큰 값 부터 내려감     
 최소힙 : 부모-자식 노드에서 부모가 제일 작은 값 부터 내려감    
 
+(priorityque 보다 heapq가 더 빠르다)
+
 ```
 import heapq
 
@@ -65,6 +69,8 @@ arr = []
 heapq.heapify(arr)
 heapq.heappush(arr,10) # 10을 arr에 추가  
 heapq.heappop(arr) # arr의 가장 작은 원소 리턴하고 삭제 / 없을 경우 index error (삭제 안할경우 index접근)
+heapq.heapreplace(arr,target,target2) pop -> push 순서로 replace된다.
+heapq.pushpop(arr,target) #target 을 push -> pop 순서로 진행한다.
 
 #heapify 한 후 arr은 heap이 되어서 작은 숫자부터 자동정렬된다.
 arr[0] # => 제일 작은값 출력됨.
