@@ -12,7 +12,7 @@ N	works	result
 2. 최대힙으로 처리하기 위해서 (-)처리
 3. heapreplace = pop -> push 순으로 실행
 
-- eap은 O(log n) 이지만, sort는 O(n log n) 이라서 heap이 더 빠르다. (n배 차이) 
+- heap은 O(log n) 이지만, sort는 O(n log n) 이라서 heap이 더 빠르다. (n배 차이) 
 '''
 
 # heap 사용
