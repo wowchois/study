@@ -1,4 +1,5 @@
 '''
+heap 유형
 TEST CASE - 최솟값 구하기 (배상비용최소화 문제와 비슷)
 
 works	n	result
