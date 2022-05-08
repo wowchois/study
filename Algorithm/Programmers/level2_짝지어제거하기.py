@@ -1,4 +1,5 @@
 '''
+stack 유형
 
 TEST CASE
 
@@ -10,6 +11,10 @@ bcaacb 1
 bcaccaab 0
 '''
 
+'''
+1. 문자열 길이가 2이하인 케이스 미리 제거
+2. 대상 문자열과 stack 비교하면서 값 같으면 pop 다르면 append
+'''
 def solution(s):
     answer = 0
     stack = []
