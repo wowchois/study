@@ -15,6 +15,23 @@
 - list 의 pop(0) 보다 deque 의 popleft()가 더 빠르다. (pop(0) 시간복잡도 O(n))
 - O(logn)과 O(nlogn) 과 엄청난 속도차이가 있다. (n배가 됨)
 
+
+### stack
+: First In Last Out 으로 먼저들어와서 마지막에 나가는 방법  
+python 에서는 list()로 풀이하며, pop/append 로 in/out 한다. (접근은 index)  
+- 보통 stack문제는 stack 새로운 list 생성하고, 대상 list에서 stack없는 경우 넣고, 들어간 데이터와 비교하면서 같으면 pop 다르면 append 하는 방법   
+
+```
+
+stack = []
+stack.append(1)
+stack.pop()
+
+stack[0] 
+stack[-1]
+```
+
+
 ### deque
 - deque   
 : 양방향 queue (앞/뒤 방향에서 요소 출력가능) O(1)    
