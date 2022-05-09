@@ -9,6 +9,9 @@ s	result
 '''
 
 '''
+어려웠던 부분
+- stack으로 어떻게 풀어야하는지 몰랐음 ㅠ
+
 1. stack 비어있으면 stack append
 2. stack에 비교대상 있으면 현재대상(alpha) 와 비교해서 alpha가 더 작으면 그냥 append
 alpha가 더 크면 마지막 요소를 제거 (큰요소가 나올때까지 반복 - 반복하다가 stack 비워지면 stack에 append하는 부분으로 넘어감(while 종료))
