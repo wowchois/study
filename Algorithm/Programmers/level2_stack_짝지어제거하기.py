@@ -31,6 +31,7 @@ def solution(s):
             else:
                 stack.append(txt)
     
-    answer = 1 if len(stack) == 0 else 0
-    
-    return answer
+    #answer = 1 if len(stack) == 0 else 0
+    #return answer
+    #코드 개선
+    return int(stack == [])
