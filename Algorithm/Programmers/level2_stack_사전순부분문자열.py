@@ -9,8 +9,7 @@ s	result
 '''
 
 '''
-어려웠던 부분
-- stack으로 어떻게 풀어야하는지 몰랐음 ㅠ
+어려웠던 부분 : 알파벳 case는 만들어낼 수 있었는데, stack으로 알파벳 순서 어떻게 비교하는지 감이 안왔다.
 
 1. stack 비어있으면 stack append
 2. stack에 비교대상 있으면 현재대상(alpha) 와 비교해서 alpha가 더 작으면 그냥 append
