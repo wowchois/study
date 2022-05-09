@@ -16,7 +16,7 @@ def solution(max_weight, specs, names):
     answer = 1
     specs_dict = dict(specs)
     que = deque(names)
-    allSum = int(specs_dict[que.popleft()])
+    all_sum = int(specs_dict[que.popleft()])
     
     while que:
         name = que.popleft()
