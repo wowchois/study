@@ -31,7 +31,23 @@ def solution(s):
             else:
                 stack.append(txt)
     
-    #answer = 1 if len(stack) == 0 else 0
-    #return answer
-    #코드 개선
+    answer = 1 if len(stack) == 0 else 0
+    return answer
+
+
+#코드 개선
+def solution(s):
+    answer = 0
+    stack = []
+    
+    if len(s) < 2: return 0    
+    if len(s) == 2: return 1 if s[0] == s[1] else 0
+
+    for txt in s:
+        if stack and txt == stack[-1]:
+            stack.pop()
+        else:
+            stack.append(txt)  
     return int(stack == [])
+
+
