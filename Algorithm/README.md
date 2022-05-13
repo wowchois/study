@@ -146,6 +146,18 @@ ex) 2,3,4,5,6,7,8,9
 - 남은 수 : 2,3,5,7  
 
 
+### 완전탐색
+파이썬 라이브러리  
+
+- combinations
+: 모든 경우의 수를 짝지어서 반환
+```
+from itertools import combinations
+
+arr = [1,4,2,5,7,8,9,10]
+comb = list(combinations(arr,3)) # 3개씩 모든 경우의 수를 tuple로 묶어준다.
+```
+
 
 
 
