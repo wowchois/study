@@ -18,7 +18,7 @@ def solution(n):
     n_arr = [True] * (n+1) #인덱스 0부터 n+1까지 True (소수 시작은 2부터 n까지 필요)
 
     #에라토스테네스 : 소수 구하는 방법 중 하나
-    for i in range(2, int(n**0.5)+1): #
+    for i in range(2, int(n**0.5)+1): #n의 최대약수 = n**0.5 = sqrt(n) 까지만 체크하면됨.
         if n_arr[i]:
             for j in range(i+i,n+1,i): # i의 다음 배수(i+i)부터 i의 배수 false (2+2,n+1,2) -> 4부터 2씩 건너뛰기 
                 n_arr[j] = False
