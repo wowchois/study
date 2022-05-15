@@ -15,7 +15,7 @@ TEST CASE
 def solution(board, nums):
     answer = 0
     length = len(board)
-    n_dict = {n : 0 for n in nums}
+    n_dict = {n : 0 for n in nums} # set(nums) 해도 됨 -> set자체가 dictionary형태로 중복 삭제해서 O(1)
     
     for i in range(length):
         for j in range(length):
@@ -41,3 +41,32 @@ def solution(board, nums):
     
     return answer
 
+
+
+# set으로 변경한 경우
+def solution(board, nums):
+    answer = 0
+    length = len(board)
+    nums = set(nums)
+    
+    for i in range(length):
+        for j in range(length):
+            if board[i][j] in nums: #set 탐색으로 O(1), 그냥 탐색하면 O(n)
+                board[i][j] = 0
+        
+    cross_sum = 0   # \ (index 0부터 시작하는 대각선)
+    m_cross_sum = 0 # / (index 뒤에서부터 시작하는 대각선)
+    
+    for i in range(length):
+        col_sum = 0
+        for j in range(length):
+            col_sum += board[j][i]
+        cross_sum += board[i][i]
+        m_cross_sum += board[i][length-i-1]
+        
+        if sum(board[i]) == 0: answer += 1  #행
+        if col_sum == 0: answer += 1        #열
+    if cross_sum == 0: answer += 1
+    if m_cross_sum == 0: answer += 1    
+    
+    return answer
