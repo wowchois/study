@@ -141,19 +141,24 @@ heapq.heapify(n_arr) # list를 heapq로 변환
 
 
 ### DFS / BFS
-- DFS(Depth First Search)  
+: 2차원 지도 주어진 경우 DFS/BFS로 풀이 / 그래프 간선 가중치가 같을 때 적합하다. (다른 경우 다익스트라 알고리즘)
+#### DFS(Depth First Search)  
 : 경로저장/경로의 특징 경우, 검색대상이 큰 경우
-- BFS(Breadth First Search)  
+#### BFS(Breadth First Search)  
 : 최단거리 경우 (현재 노드로부터 가까운것 찾기 등), 규모가 안크고 검색대상이 멀지 않은 경우
 - 모든지점 방문은 DFS/BFS 상관없음
-
 
 풀이방식
 - DFS : stack / 재귀함수
 - BFS : queue
 
 
-### 에라토스테네스
+#### 다익스트라 알고리즘
+: 최단 경로 알고리즘   
+우선순위 큐로 풀어내며, V(정점의 수), E(간선의 수) -> O(E log V) 시간복잡도를 가진다.  
+
+
+### 소수 찾기 - 에라토스테네스 
 : 소수 여부 판단하는 알고리즘 중 하나
 
 1. N까지의 수를 나열한다.
