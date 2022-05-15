@@ -16,6 +16,7 @@
 - O(logn)과 O(nlogn) 과 엄청난 속도차이가 있다. (n배가 됨)
 - python 알파벳은 크기 비교가 가능!!!!! ('x' > 'y' => False 리턴)
 - python에서 dictionary로 list로 직접 접근할때 dict key에 list item값이 없는 경우 KeyError 발생하므로, try~except: 처리 필요!  
+- zip(*arr) : 2중배열이라면 가로 배열이 세로 배열로 전환된다.
 
 
 ### stack
