@@ -24,6 +24,6 @@ def solution(n):
                 n_arr[j] = False
     
     idx_arr = [i for i in range(2,len(n_arr)) if n_arr[i] == True]
-    combi = [1 for x in list(combinations(idx_arr,3)) if sum(x) == n]
+    combi = [sum(x) for x in list(combinations(idx_arr,3))].count()
     
-    return len(combi)
+    return combi
