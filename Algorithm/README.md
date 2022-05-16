@@ -40,6 +40,16 @@ rotate = [list(reverse(i)) for i in zip(*arr)]
 [1,0,0]    
 ```
 
+### 재귀함수
+: 파이썬에서 재귀함수를 사용할 경우 함수 제한을 해제하는 코드 작성이 필요  
+
+```
+import sys
+sys.setrecursionlimit(10000)
+
+```
+
+
 
 ### stack
 : First In Last Out 으로 먼저들어와서 마지막에 나가는 방법  
