@@ -18,6 +18,6 @@ def solution(m, weights):
     
     for i in range(2, len(min_arr)):
         te = [1 for c in list(combinations(min_arr, i)) if sum(c) == m]
-        answer += len(te) if len(te) > 0 else 0
+        answer += len(te)
     
     return answer
