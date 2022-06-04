@@ -6,6 +6,7 @@
   dict.pop('key',값이없을때 리턴값) : .get과 비슷한데, pop을 하면서 리턴한다.   
   'key' in dict : True/False 리턴으로 key 여부 확인   
   .keys() / .values()   
+  .setDefault(key,default_value) : key가 없으면 default_value를 넣고, 있으면 값 반환
 - list(문자열) : 한글자씩 리스트로 리턴된다.
 - list 길이가 같은 배열 2개 경우 zip() 으로 묶어서 사용
 - for else 문 사용하기
