@@ -6,13 +6,13 @@
 
 ## 목차
 
-- [unpacking](#unpacking)
+- [* unpacking](#unpacking)
 - [재귀함수](#재귀함수)
 - [stack](#stack)
 - [deque](#deque)
-- [priorityqueue](#priorityqueue)
+- [PriorityQueue](#priorityqueue)
 - [heapq](#heapq)
-- [dfs/bfs](#dfs/bfs)
+- [DFS/BFS](#dfs_bfs)
 - [소수찾기](#소수찾기)
 - [완전탐색](#완전탐색)
 - [백트래킹](#백트래킹)
@@ -171,7 +171,7 @@ heapq.heapify(n_arr) # list를 heapq로 변환
 
 
 
-### dfs/bfs
+### dfs_bfs
 : 2차원 지도 주어진 경우 DFS/BFS로 풀이 / 그래프 간선 가중치가 같을 때 적합하다. (다른 경우 다익스트라 알고리즘)
 #### DFS(Depth First Search)  
 : 경로저장/경로의 특징 경우, 검색대상이 큰 경우
