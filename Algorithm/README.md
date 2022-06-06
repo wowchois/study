@@ -6,18 +6,18 @@
 
 ## 목차
 
-- [* unpacking](#* unpacking)
+- [unpacking](#unpacking)
 - [재귀함수](#재귀함수)
 - [stack](#stack)
 - [deque](#deque)
-- PriorityQueue
-- heapq
-- [DFS/BFS](#DFS/BFS)
-- 소수찾기 
-- 완전탐색
-- 백트래킹
-- 그리디
-- 그래프
+- [priorityqueue](#priorityqueue)
+- [heapq](#heapq)
+- [dfs/bfs](#dfs/bfs)
+- [소수찾기](#소수찾기)
+- [완전탐색](#완전탐색)
+- [백트래킹](#백트래킹)
+- [그리디](#그리디)
+- [그래프](#그래프)
 
 ## python 풀이 시 고려할 사항
 - 문자열을 [n:m]로 자르는 경우, 문자열 길이 이상 잘라도 출력은 ''이다.  
@@ -43,8 +43,8 @@
 -        1차원 경우 target = item[:]
 
 
-### * unpacking
-: (),{},[] 괄호를 한번 걷어내는 작업  
+### unpacking
+: * = (),{},[] 괄호를 한번 걷어내는 작업  
 ex) zip(*[[1,0.0],[0.0.1],[0,1,0]]) -> *으로 [1,0.0],[0.0.1],[0,1,0]만 남은 상태에서 zip을 하면 tuple로 첫번째요소끼리 묶이고, 두번쨰 요소끼리 묶임  
 -> (1,0,0),(0,0,1),(0,1,0) 으로 변환된다.   
 2차원 배열 회전 경우  
@@ -110,7 +110,7 @@ t_que.remove(item) # 찾아서 삭제
 t_que.rotate(n) # n만큼 회전 (+ 오른쪽, - 왼쪽)
 ```
 
-### PriorityQueue
+### priorityqueue
 - PriorityQueue    
 : 우선순위 queue로 선입선출 구조이다. (First In First Out)   
 데이터를 추가한 대로 삭제된다.  
@@ -171,7 +171,7 @@ heapq.heapify(n_arr) # list를 heapq로 변환
 
 
 
-### DFS/BFS
+### dfs/bfs
 : 2차원 지도 주어진 경우 DFS/BFS로 풀이 / 그래프 간선 가중치가 같을 때 적합하다. (다른 경우 다익스트라 알고리즘)
 #### DFS(Depth First Search)  
 : 경로저장/경로의 특징 경우, 검색대상이 큰 경우
