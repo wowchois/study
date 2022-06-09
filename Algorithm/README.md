@@ -8,6 +8,7 @@
 
 - [* unpacking](#unpacking)
 - [재귀함수](#재귀함수)
+- [dictionary](#dictionary)
 - [stack](#stack)
 - [deque](#deque)
 - [PriorityQueue](#priorityqueue)
@@ -22,23 +23,18 @@
 
 ## python 풀이 시 고려할 사항
 - 문자열을 [n:m]로 자르는 경우, 문자열 길이 이상 잘라도 출력은 ''이다.  
-- dictionary 사용   
-  dict.get('key',값이없을때 리턴값) : key값으로 찾는데, 값이 없는 경우 뒤의값으로 return한다.   
-  dict.pop('key',값이없을때 리턴값) : .get과 비슷한데, pop을 하면서 리턴한다.   
-  'key' in dict : True/False 리턴으로 key 여부 확인   
-  .keys() / .values()   
-  .setdefault(key,default_value) : key가 없으면 default_value를 넣고, 있으면 값 반환
-- list(문자열) : 한글자씩 리스트로 리턴된다.
-- list 길이가 같은 배열 2개 경우 zip() 으로 묶어서 사용
+- list(문자열) : 한글자씩 리스트로 리턴된다.   
+  list 길이가 같은 배열 2개 경우 zip() 으로 묶어서 사용   
+  list 의 pop(0) 보다 deque 의 popleft()가 더 빠르다. (pop(0) 시간복잡도 O(n))   
+- zip(*arr) : 2중배열이라면 가로 배열이 세로 배열로 전환된다.
 - for else 문 사용하기
 - math.ceil() 올림 사용하기
-- 정렬 .sort()는 O(nlogn) 이다. (필요할때는 사용하는게 좋다)
+- int형 범위가 넘으면 bigint형 연산(= string변환을 통한 연산)을 해서 시간이 오래걸린다.
+- .sort() 정렬은 O(nlogn) 이다. (필요할때는 사용하는게 좋다)
 - 우선순위가 높은 것부터 처리해야 하는 경우 heap문제가 많음.
-- list 의 pop(0) 보다 deque 의 popleft()가 더 빠르다. (pop(0) 시간복잡도 O(n))
 - O(logn)과 O(nlogn) 과 엄청난 속도차이가 있다. (n배가 됨)
 - python 알파벳은 크기 비교가 가능!!!!! ('x' > 'y' => False 리턴)
 - python에서 dictionary로 list로 직접 접근할때 dict key에 list item값이 없는 경우 KeyError 발생하므로, try~except: 처리 필요!  
-- zip(*arr) : 2중배열이라면 가로 배열이 세로 배열로 전환된다.
 - copy 
 -        2차원 경우 target = [item[:] for item in arr] 이렇게 복사하면 메모리 낭비 없이 빠르게 가능.
 -        1차원 경우 target = item[:]
@@ -69,6 +65,23 @@ rotate = [list(reverse(i)) for i in zip(*arr)]
 import sys
 sys.setrecursionlimit(10000)
 
+```
+
+
+
+### dictionary
+: key, value 형태의 타입으로 key로 데이터 찾는 경우 시간복잡도는 O(1)이다.   
+  
+```
+dict.get('key', 값이없을때 리턴값) # : key값으로 찾는데, 값이 없는 경우 뒤의값으로 return한다.   
+dict.pop('key', 값이없을때 리턴값) # : .get과 비슷한데, pop을 하면서 리턴한다.   
+
+'key' in dict # : True/False 리턴으로 key 여부 확인  
+
+.keys()
+.values()   
+
+.setdefault(key, default_value) # : key가 없으면 default_value를 넣고, 있으면 값 반환
 ```
 
 
