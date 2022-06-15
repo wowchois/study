@@ -1,8 +1,12 @@
 
-## MSA
+# MSA
 ### MicroService Architecture  
 큰 기능을 각각 여러개의 기능으로 분리해 독립적 배포가 가능하게 하는 서비스  
-반대개념 = Monolithic : 모든 요소가 하나로 구성되어 있다.   
+반대개념 = Monolithic : 모든 요소가 하나로 구성되어 있다.    
+
+
+> Spring Cloud (Netflix OSS) 개념 [이동](./SpringCloud개념.md)
+
 
 ex)   
 Monolithic 프로젝트   
