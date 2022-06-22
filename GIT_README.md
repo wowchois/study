@@ -18,3 +18,8 @@ git push origin branch_name  -- branch로 push한다.
 git에서 여러 브랜치를 관리할 때, 꼭 해당 브랜치로 checkout하고 commit/push해야 한다.    
 
 #### tag생성/push
+
+```
+git tag <tag name> -m "message"
+git push origin <tag name>
+```
