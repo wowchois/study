@@ -23,3 +23,16 @@ git에서 여러 브랜치를 관리할 때, 꼭 해당 브랜치로 checkout하
 git tag <tag name> -m "message"
 git push origin <tag name>
 ```
+
+#### stash
+: branch작업 내용을 backup한다.
+
+```
+git stash       -- 작업 backup
+git stash list  -- stash list확인
+git stash apply stash@{0} -- stash@{0} 번 적용
+git stash drop stash@{0}  -- stash@{0} 번 삭제
+git stash apply -- 목록에 있는 stash 모두 적용
+git stash drop -- 목록에 있는 stash 모두 삭제
+```
+
