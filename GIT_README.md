@@ -36,3 +36,12 @@ git stash apply -- 목록에 있는 stash 모두 적용
 git stash drop -- 목록에 있는 stash 모두 삭제
 ```
 
+
+### git 연결해제
+
+```
+git remote -v     -- remote 확인
+git remote remove origin  -- 연결해제
+find ./ -name ".git" | xargs rm -Rf   -- .git 파일 삭제
+```
+
