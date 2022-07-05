@@ -19,3 +19,38 @@
 > 도메인(Route 53)  
 > DB서버(RDS)  
 
+### AWS에서 제공하는 서비스
+#### EC2 (Amazon Elastic Compute Cloud)
+: 컴퓨터 용량을 제공하는 서비스 (서버 + OS + 소프트웨어)  
+자유롭게 설치하고 시스템 구축할 수 있다. (이미 세팅된 서버 사용 가능)  
+성능은 가변적이며, 일지정지 중에는 언제든 성능 조절 가능.  
+
+#### S3 (Amazon Simple Storage Service)
+: Object Storage Service이다.  
+30웹 서버, 파일 서버용 파일들을 보관하는 저장소.  
+스토리지는 장애에 강하고 다른 서비스와 연동하는 기능도 가지고 있다.  
+파일 크기는 최대 5TB이며, 전체 용량 제한은 없다.  
+
+#### VPN
+: AWS계정 전용의 가상 네트워크이다.  
+네트워크, 서브넷의 범위, 라우팅 테이블이나 게이트웨이 등을 설정하고 VM환경을 구성한다.  
+
+#### RDS
+: AWS의 관계형 데이터베이스이다.  
+Aurora, PostgreSQL, MySQL, MariaDB, Oracle, SQL server 6종류의 DB를 클라우드에서 이용할 수 있는 서비스.  
+
+#### Route 53
+: DNS(Domain Name Server) 기능을 제공한다.  
+
+#### Elastic IP
+: 서버의 정적 공인 IP주소를 제공한다.  
+EC2 + ELB(Elastic Load Balancing)와 조합해서 사용   
+
+#### Amazon Managed Blockchain
+: 블록체인 네트워크를 생성, 관리할 수 있다.  
+데이터 위조/변조를 확인하는 기반으로 이용.  
+
+
+
+
+
