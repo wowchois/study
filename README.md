@@ -7,7 +7,7 @@
 - codility
 - itwill study
 
-### web개념 정리
+### 개념 정리
 - [AWS](./web개념정리/aws구조와기술)
 - [MSA](./web개념정리/MSA개념.md)
 - [Spring Cloud](./web개념정리/SpringCloud개념.md)
