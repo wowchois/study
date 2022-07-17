@@ -49,6 +49,13 @@ Amazon Linux, CentOS, Ubuntu, Windows, Tomcat, NginX, SFTP 등
 ### 인스턴스 유형  
 
 
+|용도|인스턴스 유형|
+|---------|------------|
+|범용 |A1, T3, T2, M5, M5a, M4, T3a |
+|컴퓨팅 최적화 |C5, C5n, C4 |
+|메모리 최적화 |R5, R5a, R4, X1e, X1, z1d |
+|가속화 컴퓨팅 최적화 |P3, P2, G3, F1 |
+|스토리지 최적화 |H1, I3, D2 |
 
 
 
