@@ -58,5 +58,10 @@ Amazon Linux, CentOS, Ubuntu, Windows, Tomcat, NginX, SFTP 등
 |스토리지 최적화 |H1, I3, D2 |스토리지 최적화 서버. |
 
 
+### EBS
+: Elastic Block Store. 영구적 블록 저장소이며, EC2 인스턴스와 조합해서 사용.  
+아마존은 S3오브젝트 스토리지 방식.  
+EBS는 HDD, SSD 선택해서 사용한다. (고성능 : SSD, 저성능 : HDD)    
+
 
 
