@@ -4,8 +4,8 @@
 ### Algorithm
 - [Programmers](./Algorithm/Programmers)
 - [Baekjoon](./Algorithm/Baekjoon)
-- [codility]
-- [itwill study]
+- [codility](./Algorithm/Codility)
+- [itwill study](./Algorithm/itwill_study)
 
 ### 개념 정리
 - [AWS](./web개념정리/aws구조와기술)
