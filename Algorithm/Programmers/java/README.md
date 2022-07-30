@@ -1,5 +1,15 @@
 # JAVA 알고리즘
 
+### 문자열 배열에 문자열 포함 여부 체크
+
+```java
+String[] test = {"test1","test2"};
+String msg = "test2";
+
+Arrays.ofList(test).contains(msg); // Boolean return
+
+```
+
 ### 형 변환
 
 - String[] <-> List<String>
@@ -28,6 +38,17 @@
 Arrays.sort();
 ```
 
+### HashMap
+
+```java
+
+Map<String,Integer> test = new HashMap();
+
+// 1. 값 있으면 가져오고 없으면 기본값 세팅 
+test.put("key", test.getOrDefault("key", 0));
+
+
+```
 ### heap
 ```java
 
