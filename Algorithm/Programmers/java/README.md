@@ -47,6 +47,22 @@ Map<String,Integer> test = new HashMap();
 // 1. 값 있으면 가져오고 없으면 기본값 세팅 
 test.put("key", test.getOrDefault("key", 0));
 
+// 2. map으로 stream 처리
+String value = test.entrySet()
+                    .stream()
+                    .filter(info -> info.getValue() > 0)
+                    .map(Map.Entry::getKey)
+                    .findFirst().get();
+
+// List로 가져오는 경우
+import java.util.stream.Collectors;
+
+List valueList = test.entrySet()
+                    .stream()
+                    .filter(info -> info.getValue() > 0)
+                    .map(Map.Entry::getKey)
+                    .collect(Collectors.toList()); // return : []
+
 
 ```
 ### heap
