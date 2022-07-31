@@ -32,6 +32,16 @@ Arrays.ofList(test).contains(msg); // Boolean return
   
   // test => ["1","2","3"]
   ```
+
+- 문자열
+
+```java
+String msg = "test";
+
+msg.charAt(i); //i번째 문자열 리턴
+
+```
+  
   
 ### 정렬
 ```java
