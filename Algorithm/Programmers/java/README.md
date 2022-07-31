@@ -44,8 +44,12 @@ Arrays.sort();
 
 Map<String,Integer> test = new HashMap();
 
-// 1. 값 있으면 가져오고 없으면 기본값 세팅 
+// 값 있으면 가져오고 없으면 기본값 세팅 
 test.put("key", test.getOrDefault("key", 0));
+```
+
+```java
+Map<String,Integer> test = new HashMap();
 
 // 2. map으로 stream 처리
 String value = test.entrySet()
@@ -63,8 +67,15 @@ List valueList = test.entrySet()
                     .map(Map.Entry::getKey)
                     .collect(Collectors.toList()); // return : []
 
+```
+```java
+
+//map에 key가 포함되어있는지 확인
+map.containsKey("keyName"); //return : true, false
 
 ```
+
+
 ### heap
 ```java
 
