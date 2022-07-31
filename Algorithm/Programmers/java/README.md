@@ -51,7 +51,7 @@ test.put("key", test.getOrDefault("key", 0));
 ```java
 Map<String,Integer> test = new HashMap();
 
-// 2. map으로 stream 처리
+// map으로 stream 처리
 String value = test.entrySet()
                     .stream()
                     .filter(info -> info.getValue() > 0)
