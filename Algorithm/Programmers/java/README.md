@@ -32,6 +32,12 @@ Arrays.ofList(test).contains(msg); // Boolean return
   
   // test => ["1","2","3"]
   ```
+- List -> String[]
+  ```
+  result.stream().mapToInt(i -> i).toArray();
+  
+  ```
+  
 
 - 문자열
 
