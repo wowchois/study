@@ -33,9 +33,8 @@ Arrays.ofList(test).contains(msg); // Boolean return
   // test => ["1","2","3"]
   ```
 - List -> String[]
-  ```
+  ```java
   result.stream().mapToInt(i -> i).toArray();
-  
   ```
   
 
