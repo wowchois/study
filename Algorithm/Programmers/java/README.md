@@ -48,6 +48,12 @@ msg.charAt(i); //i번째 문자열 리턴
 Arrays.sort();
 ```
 
+- Collections sort
+```java
+List<Integer> vList = new ArrayList(values.keySet());
+Collections.sort(vList, (o1,o2) -> values.get(o2) - values.get(o1));
+```
+
 ### HashMap
 
 ```java
