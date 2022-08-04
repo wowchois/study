@@ -59,6 +59,13 @@ List<Integer> vList = new ArrayList(values.keySet());
 Collections.sort(vList, (o1,o2) -> values.get(o2) - values.get(o1));
 ```
 
+- Comparator
+: 내림차순 정렬에 많이 사용.  
+```java
+import java.util.Comparator
+```
+
+
 ### HashMap
 
 ```java
