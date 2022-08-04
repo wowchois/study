@@ -57,8 +57,17 @@ msg.charAt(i); //i번째 문자열 리턴
   
   
 ### 정렬
+  
+- Array sort
 ```java
-Arrays.sort();
+  Arrays.sort();
+
+  String[] strArray = {"3", "30", "34", "5", "9"};
+  
+  //1. String 정렬
+  Arrays.sort(strArray, (o1,o2) -> (o1+o2).compareTo(o2+o1));
+  //result : ["30", "3", "34", "5", "9"]
+  
 ```
 
 - Collections sort
