@@ -65,8 +65,11 @@ msg.charAt(i); //i번째 문자열 리턴
   String[] strArray = {"3", "30", "34", "5", "9"};
   
   //1. String 정렬
-  Arrays.sort(strArray, (o1,o2) -> (o1+o2).compareTo(o2+o1));
+  Arrays.sort(strArray, (o1,o2) -> (o1+o2).compareTo(o2+o1)); //오름차순
   //result : ["30", "3", "34", "5", "9"]
+  
+  Arrays.sort(strArray, (o1,o2) -> (o1+o2).compareTo(o2+o1)); //내림차순
+  //["9", "5", "34", "3", "30"]
   
 ```
 
