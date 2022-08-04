@@ -37,6 +37,14 @@ Arrays.ofList(test).contains(msg); // Boolean return
   result.stream().mapToInt(i -> i).toArray();
   ```
   
+- int[] -> string[]
+```java
+int[] numbers = {3,2,45};
+String[] strArray = Arrays.stream(numbers).mapToObj(String::valueOf).toArray(String[]::new);
+
+System.out.println(Arrays.toString(strArray));
+```
+  
 
 - 문자열
 
