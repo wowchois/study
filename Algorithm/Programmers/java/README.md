@@ -27,7 +27,7 @@ Arrays.ofList(test).contains(msg); // Boolean return
   //answer => ["1"]
   
   String[] testArray = {"1","2"};
-  List<String> test = new ArrayList<>(Arrays.asList(testArray)); //array -> list
+  List<String> test = new ArrayList(Arrays.asList(testArray)); //array -> list
   test.add("3");
   
   // test => ["1","2","3"]
