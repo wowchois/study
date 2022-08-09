@@ -10,6 +10,16 @@ Arrays.ofList(test).contains(msg); // Boolean return
 
 ```
 
+### Array
+```java
+
+//fill 배열 채우기
+int[] result = new int[5];
+Arrays.fill(result, 1); //[1,1,1,1,1] 
+
+
+```
+
 ### 형 변환
 
 - String[] <-> List<String>
