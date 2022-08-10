@@ -7,8 +7,38 @@ n	lost	reserve	return
 3	[3]	[1]	2
 */
 
+// 통과 case
+import java.util.*;
+
+class Solution {
+    public int solution(int n, int[] lost, int[] reserve) {
+        int answer = 0;
+        int[] result = new int[n+2];
+
+        for(int l : lost) result[l]--;
+        for(int r : reserve) result[r]++;
+        
+        for(int i=1; i <= n; i++){
+            if(result[i] != 1) continue;
+            if(result[i-1] == -1){
+                result[i-1]++;
+                result[i]--;
+            }else if(result[i+1] == -1){
+                result[i+1]++;
+                result[i]--;
+            }
+        }
+        
+        for(int i=1; i <= n; i++){
+            if(result[i] > -1) answer++;   
+        }
+        
+        return answer;
+    }
+}
 
 
+// case 17~20 실패 
 import java.util.*;
 
 class Solution {
