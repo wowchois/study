@@ -75,6 +75,11 @@ msg.charAt(i); //i번째 문자열 리턴
   //["9", "5", "34", "3", "30"]
   
 ```
+- int[]는 그냥 정렬.
+```java
+int[] intArray = {1,2,3};
+Arrays.sort(intArray);
+```
 
 - Collections sort
 ```java
