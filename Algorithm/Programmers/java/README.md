@@ -25,10 +25,6 @@ Arrays.fill(result, 1); //[1,1,1,1,1]
 - String[] <-> List<String>
   
   ```java
-  import java.util.Arrays;
-  import java.util.List;
-  import java.util.ArrayList;
-  
   String[] answer = {};
   List<String> result = new ArrayList<>();
   result.add("1");
@@ -106,17 +102,18 @@ Map<String,Integer> test = new HashMap();
 test.put("key", test.getOrDefault("key", 0));
 ```
 
+- map으로 stream 처리
 ```java
 Map<String,Integer> test = new HashMap();
 
-// map으로 stream 처리
 String value = test.entrySet()
                     .stream()
                     .filter(info -> info.getValue() > 0)
                     .map(Map.Entry::getKey)
                     .findFirst().get();
-
-// List로 가져오는 경우
+```
+- List로 가져오는 경우
+```
 import java.util.stream.Collectors;
 
 List valueList = test.entrySet()
