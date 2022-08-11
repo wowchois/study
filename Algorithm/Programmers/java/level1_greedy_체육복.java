@@ -5,6 +5,11 @@ n	lost	reserve	return
 5	[2, 4]	[1, 3, 5]	5
 5	[2, 4]	[3]	4
 3	[3]	[1]	2
+
+https://school.programmers.co.kr/learn/courses/30/lessons/42862
+
+1. lost는 -1로, reserve는 +1씩 증가해서 여분이 있는지를 result에 담는다.
+2. n만큼 회전하면서 앞/뒤로 -1이면 여분에서 
 */
 
 // 통과 case
@@ -13,7 +18,7 @@ import java.util.*;
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = 0;
-        int[] result = new int[n+2];
+        int[] result = new int[n+2]; //0,n+1은 사용안함.
 
         for(int l : lost) result[l]--;
         for(int r : reserve) result[r]++;
