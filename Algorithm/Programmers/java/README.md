@@ -7,7 +7,6 @@ String[] test = {"test1","test2"};
 String msg = "test2";
 
 Arrays.ofList(test).contains(msg); // Boolean return
-
 ```
 
 ### Array
@@ -16,32 +15,30 @@ Arrays.ofList(test).contains(msg); // Boolean return
 //fill 배열 채우기
 int[] result = new int[5];
 Arrays.fill(result, 1); //[1,1,1,1,1] 
-
-
 ```
 
 ### 형 변환
 
 - String[] <-> List<String>
   
-  ```java
-  String[] answer = {};
-  List<String> result = new ArrayList<>();
-  result.add("1");
-  
-  answer = result.toArray(answer); // list -> array
-  //answer => ["1"]
-  
-  String[] testArray = {"1","2"};
-  List<String> test = new ArrayList(Arrays.asList(testArray)); //array -> list
-  test.add("3");
-  
-  // test => ["1","2","3"]
-  ```
+```java
+String[] answer = {};
+List<String> result = new ArrayList<>();
+result.add("1");
+
+answer = result.toArray(answer); // list -> array
+//answer => ["1"]
+
+String[] testArray = {"1","2"};
+List<String> test = new ArrayList(Arrays.asList(testArray)); //array -> list
+test.add("3");
+
+// test => ["1","2","3"]
+```
 - List -> String[]
-  ```java
-  result.stream().mapToInt(i -> i).toArray();
-  ```
+```java
+result.stream().mapToInt(i -> i).toArray();
+```
   
 - int[] -> string[]
 ```java
@@ -113,7 +110,7 @@ String value = test.entrySet()
                     .findFirst().get();
 ```
 - List로 가져오는 경우
-```
+```java
 import java.util.stream.Collectors;
 
 List valueList = test.entrySet()
