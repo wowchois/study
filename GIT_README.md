@@ -1,6 +1,6 @@
-### Git 
+## Git 명령어 정리
 
-#### branch 생성/push
+### branch 생성/push
 ```
 git clone repository_url
 git branch branch_name     -- local에 branch생성
@@ -17,14 +17,14 @@ git push origin branch_name  -- branch로 push한다.
 
 git에서 여러 브랜치를 관리할 때, 꼭 해당 브랜치로 checkout하고 commit/push해야 한다.    
 
-#### tag생성/push
+### tag생성/push
 
 ```
 git tag <tag name> -m "message"
 git push origin <tag name>
 ```
 
-#### stash
+### stash
 : branch작업 내용을 backup한다.
 
 ```
