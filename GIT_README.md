@@ -45,3 +45,11 @@ git remote remove origin  -- 연결해제
 find ./ -name ".git" | xargs rm -Rf   -- .git 파일 삭제
 ```
 
+### branch 삭제
+```
+git branch -d branch이름    -- branch 삭제 (로컬)
+
+git branch -d branch이름    -- branch 강제삭제 (로컬 - head에 소스 올라가져있으면 -d로 삭제안됨)
+
+git push origin --delete branch이름    -- 저장소에서 branch 삭제
+```
