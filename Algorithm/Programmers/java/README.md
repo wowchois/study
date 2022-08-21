@@ -4,15 +4,19 @@
 - 문자열 이어붙이는 경우 : StringBuilder 사용하기! (+로 이어붙이면, 메모리 할당되서 시간초과 발생)
 
 
-### 문자열 배열에 문자열 포함 여부 체크
+### 문자 / 문자열
 
-- contains
+- contains : 문자열 배열에 문자열 포함 여부 체크
 ```java
 String[] test = {"test1","test2"};
 String msg = "test2";
 
 Arrays.ofList(test).contains(msg); // Boolean return
 ```
+
+- charAt : 문자열에 문자 하나 출력
+
+- "123".charAt(0) - '0' : 문자를 숫자로 변경 -> return int형 숫자
 
 ### Array
 - fill 배열 채우기
