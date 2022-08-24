@@ -122,6 +122,21 @@ map.containsKey("keyName"); //return : true, false
 ```
 
 
+### Stack
+```java
+Stack<Integer> stack = new Stack();
+
+stack.push(1);
+stack.pop(); //최상위값 출력+제거
+stack.peek(); //최상위값 출력
+stack.contains(1); //true/false
+stack.size();
+stack.empty(); //true/false
+stack.clear();
+```
+
+
+
 ### heap
 ```java
 
