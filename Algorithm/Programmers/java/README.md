@@ -6,6 +6,11 @@
 - 문자열 이어붙이는 경우 : StringBuilder 사용하기! (+로 이어붙이면, 메모리 할당되서 시간초과 발생)
 
 
+### Math
+- 올림 : Math.ceil()
+- 반올림 : Math.round()
+- 버림 : Math.floor()
+
 ### 문자 / 문자열
 
 - contains : 문자열 배열에 문자열 포함 여부 체크
