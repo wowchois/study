@@ -21,7 +21,7 @@ class Solution {
             que.offer(new Pair(i, priorities[i]));
         }
         
-        while(que.size() > 0){
+        while(!que.isEmpty()){
             Pair nowPair = que.poll();
             Boolean minFlag = isMin(que, nowPair);
             
