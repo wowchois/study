@@ -143,7 +143,7 @@ stack.clear();
 
 ### Queue
 ```java
-Queue<Integer> que = new Queue();
+Queue<Integer> que = new LinkedList();
 
 que.offer(1); //que.add();
 que.peek(); //처음 값 참조
