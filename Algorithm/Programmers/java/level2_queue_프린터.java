@@ -59,6 +59,29 @@ class Solution {
 
 //2. PriorityQueue로 푼 경우 (우선순위 큐)
 
+import java.util.*;
 
+class Solution {
+    public int solution(int[] priorities, int location) {
+        int answer = 1;
+        PriorityQueue<Integer> pque = new PriorityQueue(Collections.reverseOrder()); //내림차순 정렬
+        
+        for(int p : priorities){
+            pque.offer(p);
+        }
+        
+        while(!pque.isEmpty()){
+            for(int i=0; i < priorities.length; i++){ //index 
+                if(pque.peek() == priorities[i]){
+                    if(i == location) return answer;
+                    answer++;
+                    pque.poll();
+                }
+            }
+        }
+        
+        return answer;
+    }
+}
 
 
