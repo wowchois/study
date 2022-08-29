@@ -151,6 +151,12 @@ que.size();
 que.poll(); //처음 값 빼서 출력.
 ```
 
+### PriorityQueue
+  : 기본 오름차순이다.   
+```java
+PriorityQueue<Integer> pque = new PriorityQueue(); //오름차순
+PriorityQueue<Integer> pque = new PriorityQueue(Collections.reverseOrder()); //내림차순
+```
 
 
 ### heap
