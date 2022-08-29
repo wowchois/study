@@ -141,6 +141,16 @@ stack.empty(); //true/false
 stack.clear();
 ```
 
+### Queue
+```java
+Queue<Integer> que = new Queue();
+
+que.offer(1); //que.add();
+que.peek(); //처음 값 참조
+que.size();
+que.poll(); //처음 값 빼서 출력.
+```
+
 
 
 ### heap
