@@ -1,6 +1,9 @@
 # JAVA 알고리즘
 
 - 크루스칼 알고리즘 [예제](level3_greedy_섬연결하기.java)
+- [Stack](#stack)
+- [Heap](#heap)
+- [Queue](#queue)
 
 ## 고려할 사항
 - 문자열 이어붙이는 경우 : StringBuilder 사용하기! (+로 이어붙이면, 메모리 할당되서 시간초과 발생)
@@ -128,7 +131,7 @@ map.containsKey("keyName"); //return : true, false
 ```
 
 
-### Stack
+### stack
 ```java
 Stack<Integer> stack = new Stack();
 
@@ -141,7 +144,7 @@ stack.empty(); //true/false
 stack.clear();
 ```
 
-### Queue
+### queue
 ```java
 Queue<Integer> que = new LinkedList();
 
