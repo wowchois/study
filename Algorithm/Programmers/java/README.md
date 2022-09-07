@@ -89,6 +89,7 @@ msg.charAt(i); //i번째 문자열 리턴
 ```java
 int[] intArray = {1,2,3};
 Arrays.sort(intArray);
+Arrays.sort(intArray, (o1,o2) -> o2-o1); //내림차순
 ```
 
 - Collections sort
