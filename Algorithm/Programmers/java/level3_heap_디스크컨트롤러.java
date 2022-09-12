@@ -1,5 +1,5 @@
 /*
-프로그래머스 level3 queue
+프로그래머스 level3 heap-priorityQueue
 
 jobs	return
 [[0, 3], [1, 9], [2, 6]]	9
