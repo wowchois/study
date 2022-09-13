@@ -27,3 +27,14 @@ class Solution {
         return maxW * maxH;
     }
 }
+
+
+class Solution {
+    public int solution(int[][] sizes) {
+        
+        return Arrays.stream(sizes).reduce((o1,o2) -> new int[]{
+            Math.max(Math.max(o1[0],o1[1]),Math.max(o2[0],o2[1])), Math.max(Math.min(o1[0],o1[1]),Math.min(o2[0],o2[1]))
+        }).map(i -> i[0]*i[1])
+            .get();
+    }
+}
