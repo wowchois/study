@@ -90,6 +90,14 @@ msg.charAt(i); //i번째 문자열 리턴
 int[] intArray = {1,2,3};
 Arrays.sort(intArray);
 Arrays.sort(intArray, (o1,o2) -> o2-o1); //내림차순
+
+Arrays.sort(sizes, (o1,o2) -> { //2차원 배열 정렬 - 첫번째가 같아도 두번째에서 정렬됨.
+    if(o1[0] == o2[0]){
+        return Integer.compare(o1[1],o2[1]);
+    }else{
+        return Integer.compare(o1[0],o2[0]);
+    }
+});
 ```
 
 - Collections sort
