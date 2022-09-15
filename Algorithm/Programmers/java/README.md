@@ -1,6 +1,7 @@
 # JAVA 알고리즘
 
 - 크루스칼 알고리즘 [예제](level3_greedy_섬연결하기.java)
+- 에라토스테네스 소수 구하기 [예제](level2_완전탐색_dfs_소수찾기.java)
 - [Stack](#stack)
 - [Heap](#heap)
 - [Queue](#queue)
