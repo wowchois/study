@@ -15,6 +15,7 @@
 - 반올림 : Math.round()
 - 버림 : Math.floor()
 - 제곱 : Math.pow(n,3) #n의 3제곱
+- 루트(제곱근) : Math.sqrt()
 
 ### 문자 / 문자열
 
