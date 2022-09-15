@@ -14,6 +14,7 @@
 - 올림 : Math.ceil()
 - 반올림 : Math.round()
 - 버림 : Math.floor()
+- 제곱 : Math.pow(n,3) #n의 3제곱
 
 ### 문자 / 문자열
 
