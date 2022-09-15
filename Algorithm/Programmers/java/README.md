@@ -141,6 +141,15 @@ map.containsKey("keyName"); //return : true, false
 ```
 
 
+### HashSet
+: 중복제거 배열 
+```java
+HashSet<Integer> hashset = new HashSet();
+```
+
+
+
+
 ### stack
 ```java
 Stack<Integer> stack = new Stack();
