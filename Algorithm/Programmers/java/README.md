@@ -17,6 +17,8 @@
 - 버림 : Math.floor()
 - 제곱 : Math.pow(n,3) #n의 3제곱
 - 루트(제곱근) : Math.sqrt()
+- 몫(/) : Math.floorDiv()
+- 나머지(%) : Math.floorMod()
 
 ### 문자 / 문자열
 
@@ -113,6 +115,15 @@ Collections.sort(vList, (o1,o2) -> values.get(o2) - values.get(o1));
 : 내림차순 정렬에 많이 사용.  
 ```java
 import java.util.Comparator
+```
+
+- map 정렬
+```java
+// value정렬 : comparingByValue()
+// key정렬 : comparingByKey()
+score.entrySet().stream()
+            .sorted(Map.Entry.comparingByValue()) //value로 오름차순
+            //내림차순 : (Collections.reverseOrder(Map.Entry.comparingByValue()))
 ```
 
 
