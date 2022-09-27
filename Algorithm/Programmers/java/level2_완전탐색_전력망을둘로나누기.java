@@ -1,3 +1,66 @@
+/*
+프로그래머스 level2 완전탐색
+
+n	wires	result
+9	[[1,3],[2,3],[3,4],[4,5],[4,6],[4,7],[7,8],[7,9]]	3
+4	[[1,2],[2,3],[3,4]]	0
+7	[[1,2],[2,7],[3,7],[3,4],[4,5],[6,7]]	1
+
+https://school.programmers.co.kr/learn/courses/30/lessons/86971
+*/
+
+import java.util.*;
+
+class Solution {
+    static int[][] coords; 
+    public int solution(int n, int[][] wires) {
+        int answer = n;
+        coords = new int[n+1][n+1]; //인접행렬 (1행 0000000, 2행 0000000, ..., n행 0000000)
+        
+        for(int[] w : wires){ //간선 1로 표시
+            coords[w[0]][w[1]] = 1;
+            coords[w[1]][w[0]] = 1;
+        }
+        
+        for(int i=0; i < wires.length; i++){
+            int x = wires[i][0];
+            int y = wires[i][1];
+            
+            coords[x][y] = 0; //연결끊기
+            coords[y][x] = 0;
+            
+            answer = Math.min(answer,bfs(n,x));
+            
+            coords[x][y] = 1; //다시연결하기
+            coords[y][x] = 1;
+        }
+        
+        return answer;
+    }
+    
+    public int bfs(int n, int x){
+        int cnt = 1;
+        int[] visit = new int[n+1]; //방문한 노드 체크
+        Queue<Integer> que = new LinkedList(); //x와 연결된 노드 모두 추가
+        que.offer(x);
+        
+        while(!que.isEmpty()){
+            int point = que.poll();
+            visit[point] = 1;
+            
+            for(int i=0; i <= n; i++){
+                //System.out.println("##"+point+"/"+i+"/"+coords[point][i]+"/"+ Arrays.toString(visit));
+                if(visit[i] == 1) continue;
+                if(coords[point][i] == 1){ //point와 연결된 노드
+                    que.offer(i);
+                    cnt++;
+                }
+            }
+        }
+        
+        return (int) Math.abs(n-2*cnt); //answer = (n-cnt) - cnt => n-2*cnt
+    }
+}
 
 
 
