@@ -25,8 +25,8 @@ class Solution {
         for(int n : numbers){
             List<Integer> tmp = new ArrayList();
             for(int li : nlist){
-                tmp.add(li + n);
-                tmp.add(li - n);
+                tmp.add(li + n); //더했을 경우
+                tmp.add(li - n); //뺐을 경우
             }
             nlist = tmp;
         }
@@ -39,4 +39,28 @@ class Solution {
         return answer;
     }
 }
+
+
+// dfs 풀이
+
+import java.util.*;
+
+class Solution {
+    int cnt = 0;
+    public int solution(int[] numbers, int target) {
+        loop(numbers,target,0,0);
+        
+        return this.cnt;
+    }
+    
+    public void loop(int[] numbers, int target, int result, int depth){
+        if(depth == numbers.length){
+            if(result == target) this.cnt++;
+            return;
+        }
+        loop(numbers, target, result+numbers[depth], depth+1); //더했을 경우
+        loop(numbers, target, result-numbers[depth], depth+1); //뺐을 경우
+    }
+}
+
 
