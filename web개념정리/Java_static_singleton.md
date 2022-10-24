@@ -28,7 +28,13 @@ public class Test {
 객체를 생성한다면 이미 생성된 객체를 반환하거나, 호출 시 생성한다.   
 인터페이스 구현이 가능하고 확장이 가능하다.  
 싱글톤에서 멀티톤(여러 객체 반환)은 불가능하다.   
-ex : logger, util클래스  
+
+- 싱글톤 구현
+1. 생성자 private
+2. 클래스 내부 static으로 유일한 instance되게 생성.
+3. 외부 참조 메서드 생성. => 유일한 instance를 생성과 상관없이 호출하기 위해서
+
+    ex : logger, util클래스  
 
 - util클래스
 ```java
@@ -66,4 +72,3 @@ System.out.println(dateUtil1 == dateUtil2);  //true (두 인스턴스는 같은 
 - static은 인터페이스 구현이 불가능하지만 싱글톤은 가능하다.  
 
 - static은 stack메모리, 싱글톤은 heap메모리.  
-- 
