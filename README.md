@@ -10,7 +10,7 @@
 ### 개념 정리
 - [AWS](./web개념정리/aws구조와기술)
 - [MSA](./web개념정리/MSA개념.md)
-- [Spring Cloud](./web개념정리/SpringCloud개념.md)
+- [Spring Cloud](./web개념정리/Spring/SpringCloud개념.md)
 - [HTTP HTTPS](./web개념정리/HTTP_HTTPS.md)
 - [WAS](./web개념정리/webServer_was.md)
 - [browser](./web개념정리/browser동작.md)
