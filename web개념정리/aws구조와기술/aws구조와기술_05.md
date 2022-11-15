@@ -27,11 +27,18 @@
 엑세스 요금이 높게 산정된 스토리지.   
 엑세스 빈도가 낮고 용량이 큰 파일의 경우에 적합하다.   
 Infrequent Access 스토리지는 standard와 one-zone이 있는데, 가용영역에 따라 나눠진다.   
-> standard는 가용영역이 3개
+> standard는 가용영역이 3개   
 > one-zone은 가용영역이 1개 -> 중요한 데이터는 저장이 힘들다.   
 
 
 #### Reduced Redundancy Storage (RRS)
 내구성 낮고 가용성 높다.   
 스토리지 클래스보다는 옵션 종류로, standard에 비해 이중화를 낮추고 낮은 가격으로 산정하는 클래스.  
+
+
+#### S3 Glacier/Deep Archive
+Glacier는 장기적 백업을 고려한 스토리지 클래스이다.   
+가격이 낮고 대용량 파일도 저장이 가능하다.   
+컨테이너에 별도로 저장되며, read하면 S3로 옮겨지면서 요금이 발생된다.   
+
 
