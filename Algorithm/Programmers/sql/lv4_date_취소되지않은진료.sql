@@ -1,0 +1,18 @@
+# lv4 String,Date 
+# 취소되지 않은 진료 예약 조회
+# https://school.programmers.co.kr/learn/courses/30/lessons/132204
+
+
+SELECT 
+    AP.APNT_NO
+    ,PT.PT_NAME
+    ,AP.PT_NO
+    ,AP.MCDP_CD
+    ,DR.DR_NAME
+    ,AP.APNT_YMD
+FROM APPOINTMENT AS AP
+INNER JOIN PATIENT AS PT ON AP.PT_NO = PT.PT_NO
+INNER JOIN DOCTOR AS DR ON AP.MDDR_ID = DR.DR_ID
+WHERE DATE_FORMAT(APNT_YMD,'%Y%m%d') = DATE_FORMAT('20220413','%Y%m%d')
+    AND APNT_CNCL_YN = 'N'
+ORDER BY AP.APNT_YMD ASC
