@@ -25,3 +25,9 @@ client ------- server
 2. SYN + ACK (접속요청+수락) server -> client
 3. ACK (수락 + 데이터 같이 전송)               client -> server
 
+
+## UDP
+사용자 데이터그램 프로토콜     
+port로 IP구별하게 해줌. +체크섬 (=메시지 검증 데이터) 도 해줌      
+
+http3에서 UDP 사용하려고 함. (TCP에서 3 handshake 과정까지 줄이기 위해서)   
