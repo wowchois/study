@@ -28,10 +28,19 @@ client에서 변경할 데이터를 uri에 지정할 수 있다.
 ## Patch
 리소스 부분 변경   
 
+> PATCH /change/100    
+> param : {"age" : 3}   
+
+> 변경 param :  {"age" : 5}    
+> 결과 : {"name" : "test", "age" : 5} 리소스 일부 변경         
 
 
 ## Delete
 리소스 삭제    
+
+> DELETE /change/100    
+> 결과 : 삭제     
+
 
 ## Head
 Get과 동일하지만 상태와 헤더만 반환  
