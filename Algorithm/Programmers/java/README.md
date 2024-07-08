@@ -43,6 +43,11 @@ int[] result = new int[5];
 Arrays.fill(result, 1); //[1,1,1,1,1] 
 ```
 
+- equals 배열끼리 비교
+```java
+Arrays.equals(arr1, arr2); //true/false 
+```
+
 ### 형 변환
 
 - int[] <-> List<Integer> 리스트는 기본타입 변형(Primitive type)을 지원하지 않아서 boxed 해줘야 함.
