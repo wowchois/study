@@ -45,6 +45,19 @@ Arrays.fill(result, 1); //[1,1,1,1,1]
 
 ### 형 변환
 
+- int[] <-> List<Integer> 리스트는 기본타입 변형(Primitive type)을 지원하지 않아서 boxed 해줘야 함.
+```java
+//int[] -> List<Integer>
+List<Integer> list = Arrays.stream(arr)
+            .boxed()
+            .collect(Collectors.toList());
+
+//List<Integer> -> int[]
+int arr = list.stream()
+            .mapToInt(Integer::intValue)
+            .toArray();
+```
+
 - String[] <-> List<String>
 
 ```java
