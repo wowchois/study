@@ -27,3 +27,22 @@ class Solution {
         return answer-1;
     }
 }
+
+
+//update 2024.07.14
+import java.util.*;
+
+class Solution {
+    public int solution(String[][] clothes) {
+        int answer = 0;
+        Map<String, Integer> maps = new HashMap<>();
+        
+        for(String[] first : clothes){
+            maps.put(first[1], maps.getOrDefault(first[1], 1) + 1);
+        }
+        
+        return maps.values().stream().reduce(1, (a,b) -> a*b) - 1;
+    }
+}
+
+
